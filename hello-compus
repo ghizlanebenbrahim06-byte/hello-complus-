@@ -1,0 +1,33 @@
+
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Bonjour Campus !</Text>
+      <Text style={styles.sousTitre}>
+        IAIL S5 - Developpement mobile
+      </Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F2F7FD',
+    padding: 20,
+  },
+  title: {
+    color: '#003796',
+    fontSize: 26,
+    fontWeight: 'bold',
+  },
+  sousTitre: {
+    marginTop: 12,
+    fontSize: 16,
+    textAlign: 'center',
+  },
+});
